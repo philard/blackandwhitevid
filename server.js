@@ -25,10 +25,6 @@ io.on('connection', (sock) => {
         waitingPlayer = sock;
     }
 
-    sock.on('turn', (turn) => {
-        io.emit('turn', turn);
-    })
-
 });
 
 
