@@ -4,7 +4,7 @@ let sock = io();
 
 ['rock', 'paper', 'scissors'].forEach((figure) => {
     document.querySelector('#'+figure)
-        .addEventListener(() => {
+        .addEventListener('click', () => {
             sock.emit('turn', figure);
         });
 
